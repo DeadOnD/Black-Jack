@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    BlackJack Trainer.  BJ strategy tutor.
+    Copyright (C) 2012  Daniel Kraft <d@domob.eu>
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<!-- This is the optimal strategy matrix for dealer stands on soft 17 and
+     4 to 8 decks.  Found on Wikipedia:
+     https://en.wikipedia.org/wiki/Blackjack#Basic_strategy  -->
+
+<strategy xmlns="http://www.domob.eu/projects/bjtrainer/strategy/">
+  <hard>
+    <group player="17-21" dealer="2-11">S</group>
+    <group player="13-16" dealer="2-6">S</group>
+    <group player="12" dealer="4-6">S</group>
+    <group player="12-16" dealer="7-11">H</group>
+    <group player="12" dealer="2-3">H</group>
+    <group player="11" dealer="2-10">Dh</group>
+    <group player="10" dealer="2-9">Dh</group>
+    <group player="9" dealer="3-6">Dh</group>
+    <group player="11" dealer="11">H</group>
+    <group player="10" dealer="10-11">H</group>
+    <group player="9" dealer="2">H</group>
+    <group player="9" dealer="7-11">H</group>
+    <group player="5-8" dealer="2-11">H</group>
+  </hard>
+  <soft>
+    <group player="19-21" dealer="2-11">S</group>
+    <group player="18" dealer="2">S</group>
+    <group player="18" dealer="7-8">S</group>
+    <group player="18" dealer="3-6">Ds</group>
+    <group player="18" dealer="9-11">H</group>
+    <group player="17" dealer="2">H</group>
+    <group player="17" dealer="3-6">Dh</group>
+    <group player="13-17" dealer="7-11">H</group>
+    <group player="15-16" dealer="2-3">H</group>
+    <group player="15-16" dealer="4-6">Dh</group>
+    <group player="13-14" dealer="5-6">Dh</group>
+    <group player="13-14" dealer="2-4">H</group>
+  </soft>
+  <pairs>
+    <group player="11" dealer="2-11">SP</group>
+    <group player="10" dealer="2-11">S</group>
+    <group player="6-9" dealer="2-6">SP</group>
+    <group player="9" dealer="8-9">SP</group>
+    <group player="8" dealer="7-11">SP</group>
+    <group player="7" dealer="7">SP</group>
+    <group player="9" dealer="7">S</group>
+    <group player="9" dealer="10-11">S</group>
+    <group player="7" dealer="8-11">H</group>
+    <group player="6" dealer="7-11">H</group>
+    <group player="5" dealer="2-9">Dh</group>
+    <group player="5" dealer="10-11">H</group>
+    <group player="4" dealer="2-4">H</group>
+    <group player="4" dealer="5-6">SP</group>
+    <group player="4" dealer="7-11">H</group>
+    <group player="2-3" dealer="2-7">SP</group>
+    <group player="2-3" dealer="8-11">H</group>
+  </pairs>
+</strategy>

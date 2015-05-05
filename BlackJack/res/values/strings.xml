@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    BlackJack Trainer.  BJ strategy tutor.
+    Copyright (C) 2012  Daniel Kraft <d@domob.eu>
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<resources>
+  <string name="app_name">BlackJack</string>
+  <string name="app_version">1.0</string>
+
+  <string name="busted">busted</string>
+
+  <string name="btnHit">Hit</string>
+  <string name="btnStand">Stand</string>
+  <string name="btnDouble">Double</string>
+  <string name="btnSplit">Split</string>
+
+  <string name="player_choice">Your turn.</string>
+  <string name="player_blackjack">BlackJack, you win!</string>
+  <string name="player_busted">You busted.</string>
+  <string name="player_won" formatted="false">You win %d to %d.</string>
+  <string name="dealer_blackjack">Dealer BlackJack, you lose.</string>
+  <string name="dealer_busted">Dealer busted.</string>
+  <string name="dealer_won" formatted="false">You lose %d to %d.</string>
+  <string name="push" formatted="false">Push with %d.</string>
+
+  <string name="total_template">Total: %.1f</string>
+  <string name="remaining_template">%d remaining.</string>
+
+  <string name="cantDouble">You are not allowed to double!</string>
+  <string name="cantSplit">You are not allowed to split!</string>
+  <string name="suboptimal_decision">Your choice is not optimal.  Better: %s</string>
+  <string name="finished_learning">You finished learning.</string>
+  <string name="deleted_trainer">Trainer data was reset.</string>
+
+  <string name="category_trainer">Strategy Trainer</string>
+  <string name="h17_pref">Hit Soft 17</string>
+  <string name="h17_summary">Should the dealer hit soft 17 rather than standing?</string>
+  <string name="train_pref">Train Strategy</string>
+  <string name="train_summary">Systematically train the full strategy instead of random cards?</string>
+
+  <string name="show_strategy">Show Strategy</string>
+  <string name="preferences">Preferences</string>
+  <string name="reset_trainer">Reset Trainer</string>
+  <string name="help">Help</string>
+  <string name="about">About</string>
+
+  <string name="html_h17">Dealer hits soft 17.</string>
+  <string name="html_noH17">Dealer stands on soft 17.</string>
+  <string name="html_player_hand">Player hand</string>
+  <string name="html_dealer_card">Dealer\'s card</string>
+  <string name="html_hard">Hard totals</string>
+  <string name="html_soft">Soft totals</string>
+  <string name="html_pairs">Pairs</string>
+
+  <string name="help_title">Quick Guide</string>
+  <string name="help_para1">The screen displays your cards (at the bottom)
+and the dealer\'s visible card (on top).  Play simply by choosing your
+turn with the buttons below.  When the game is finished, touch anywhere
+to start a new one.</string>
+  <string name="help_para2">In systematic training mode, all possible
+initial situations are presented and repeated until your decision was correct
+at the first attempt.</string>
+  <string name="help_para3">Since the focus is on training BlackJack,
+also invalid choices (double / split in some situations) are presented,
+and you are only afterwards notified if something is not allowed.  In addition,
+you are notified about the optimal choice in the current situation if you
+try to do something else.</string>
+  <string name="help_para4">See also the
+<a href="http://www.domob.eu/projects/bjtrainer.php">webpage</a> for more
+details.</string>
+
+  <string name="about_title">About and Copyright</string>
+  <string name="about_version">This is <b>%s</b> version <b>%s</b>.</string>
+  <string name="about_para1">Copyright (C) 2015 Joachim Thilo.</string>
+  <string name="about_para2">This program is free software: you can
+    redistribute it and/or modify
+    it under the terms of the
+    <a href="https://www.gnu.org/copyleft/gpl.html">GNU General
+    Public License</a> as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.</string>
+  <string name="about_para3">This program is distributed in the hope that it
+    will be useful,
+    but <i>without any warranty</i>; without even the implied warranty of
+    <i>merchantability</i> or <i>fitness for a particular purpose</i>.  See the
+    GNU General Public License for more details.</string>
+</resources>
